@@ -6,7 +6,7 @@ $banner_text = get_sub_field('banner_text');
 $button_text = get_sub_field('button_text');
 $button_link = get_sub_field('button_link');
 ?><div class="banner-section">
-    <div class="container-custom flexbox flex">
+    <div class="container-custom flex">
     <div class="col text-col text-container">
         <div class="text-container-padding">
             <?if(!empty($subtitle)) {

@@ -10,7 +10,7 @@ $button_link = get_sub_field('button_link');
     <div class="container-custom">
         <div class="d-flex text-image-layout">
     <div class="col text-col d-flex justify-content-center">
-        <div class="text-container d-flex flex-column">
+        <div class="text-container d-flex flex-column align-items-center">
             <?if(!empty($subtitle)) {
                 ?>
                 <span><?php echo $subtitle;?></span>

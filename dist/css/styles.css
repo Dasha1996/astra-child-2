@@ -23,6 +23,10 @@ main {
   overflow: hidden;
 }
 
+section {
+  padding: 80px 0;
+}
+
 /*reset all containers width*/
 .ast-container {
   width: 100% !important;
@@ -41,8 +45,11 @@ main {
   padding: 0 !important;
 }
 
+h1 {
+  text-align: left;
+}
+
 h2 {
-  text-align: center;
   font-size: 40px !important;
 }
 
@@ -183,40 +190,10 @@ a.button:active {
   width: 26px;
 }
 
+/*--------- FLEXIBLE LAYOUT SECTIONS-------*/
+/*TEXT IMAGE SECTION*/
 /*Text with full width image*/
-.text-container-padding {
-  /*width:450px;*/
-  padding: 100px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  height: 100%;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-.flex img.full {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center 2px;
-}
-.flex .col {
-  width: 53%;
-  flex: unset;
-}
-.flex .image-container {
-  align-self: stretch;
-  width: 47%;
-}
-.flex h1, .flex h2 {
-  text-align: left;
-}
-
+/*services*/
 .tab {
   display: flex;
   align-items: center;
@@ -477,6 +454,14 @@ div#testimonialscontrols .carousel-indicators button.active {
 }
 
 /*---------- HOME PAGE --------*/
+/*Banner*/
+.banner-section .portrait {
+  height: 700px;
+  width: auto;
+  margin-left: auto;
+  border: 1px solid black;
+}
+
 /*Banner image*/
 .banner {
   display: flex;

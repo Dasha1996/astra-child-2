@@ -456,9 +456,10 @@ div#testimonialscontrols .carousel-indicators button.active {
 /*---------- HOME PAGE --------*/
 /*Banner*/
 .banner-section .portrait {
-  height: 615px;
+  height: 560px;
   width: 90%;
   object-fit: cover;
+  object-position: bottom;
   display: block;
   margin-left: auto;
   border: 1px solid black;

@@ -5,10 +5,10 @@ $subtitle = get_sub_field('subtitle');
 $banner_text = get_sub_field('banner_text');
 $button_text = get_sub_field('button_text');
 $button_link = get_sub_field('button_link');
-?><div class="banner-section">
+?><div class="banner-section section">
     <div class="container-custom flex">
     <div class="col text-col text-container">
-        <div class="text-container d-flex flex-column g-10">
+        <div class="text-container d-flex flex-column">
             <?if(!empty($subtitle)) {
                 ?>
                 <span><?php echo $subtitle;?></span>

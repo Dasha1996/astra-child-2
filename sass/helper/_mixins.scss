@@ -1,0 +1,25 @@
+//flexbox
+@mixin flexbox {
+    display: flex;
+        align-items: center;
+}
+
+
+@mixin flex-column {
+    display: flex;
+        flex-direction: column;
+}
+
+@mixin container {
+    padding: 90px 0;
+}
+
+@mixin inner-container {
+    padding: 25px 0;
+}
+
+@mixin fadeInItem($index) {
+    &:nth-child(#{$index}) {
+      animation-delay: #{$index * 0.3}s;
+    }
+  }

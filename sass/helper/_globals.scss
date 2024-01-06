@@ -1,0 +1,483 @@
+/*------------ GLOBAL STYLES --------*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontText;
+}
+
+main {
+    overflow: hidden;
+}
+
+/*reset all containers width*/
+.ast-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/*remove page titles*/
+.entry-title {
+    display: none;
+}
+
+/*remove paddings/margins from above*/
+.ast-plain-container.ast-no-sidebar #primary {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px !important;
+}
+
+h3 {
+    font-size: 26px !important;
+}
+
+p, a, ul, ul li, ol li {
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: $fontText;
+}
+
+hr {
+    margin-bottom: 0 !important;
+}
+
+span.center {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.entry-content p {
+    margin-bottom: 15px !important;
+}
+
+.ast-button:focus, .ast-button:hover, .button:focus, .button:hover, button:focus, button:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, input[type=submit]:focus, input[type=submit]:hover {
+    color: black !important;
+    border-color: transparent !important;
+}
+
+/*global container width*/
+.container-custom {
+    width: $container-width;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1600px) {
+    .container-custom {
+        width: $container-width-lg;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+iframe.giphy-embed {
+    pointer-events: none;
+}
+
+.half-column {
+    width: 76%;
+}
+
+/*black line under each container*/
+hr {
+    background-color: $border-bottom-color;
+    height: 1px;
+    border: none !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    position: relative;
+}
+
+/*span highlight*/
+
+span {
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear,left top,left bottom,from($primaryColor),to($primaryColor));
+    background-image: linear-gradient(180deg,$accent 0%,$accent 100%);
+    background-size: 0% 23%;
+    background-position: 0 89%;
+    -webkit-transition: background-size 0.8s ease-in-out;
+    transition: background-size 0.8s ease-in-out;
+    font-style: normal;
+    will-change: background-size;
+}
+span.in-view {
+    background-size: 100% 23% !important;
+}
+
+.cloud-button {
+    width: 155px;
+    position: relative;
+    height: 51px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    display: none;
+
+    a {
+        position: relative;
+        padding: 0;
+        z-index: 9;
+        background-color: transparent !important;
+    }
+    .cloud {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+    a.button {
+        color: black !important;
+        display: inline-block;
+        padding: 15px 27px;
+        text-align: center;
+        border-radius: 0;
+        font-size: 20px;
+        text-decoration: none !important;
+        box-shadow: 5px 5px #000;
+        border: 2px solid #000 !important;
+        transition: all ease-in 0.2s !important;
+        width: fit-content;
+        background-color: $accent;
+    }
+
+    a.button:hover,
+    a.button:focus,
+    a.button:active {
+        box-shadow:none;
+        color: black !important;
+        transform: translateY(4px);
+        border: 2px solid black !important;
+    }
+
+/*list icon style*/
+.list-item {
+    display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    img {
+        width: 26px;
+    }
+}
+
+/*Text with full width image*/
+.text-container-padding {
+    /*width:450px;*/
+    padding: 100px;
+    margin: auto;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+    height: 100%;
+}
+.flex  {
+    display: flex;
+        align-items: center;
+    img.full {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center 2px;
+    }
+    .col {
+        width: 53%;
+        flex: unset;
+    }
+    .image-container {
+        align-self: stretch;
+        width: 47%;
+    }
+
+    h1, h2 {
+        text-align: left;
+    }
+}
+
+.tab {
+    @include flexbox;
+    justify-content: flex-start;
+    width: 100%;
+    background: $linear-gradient;
+    background: linear-gradient(90deg, hsl(302.14deg 100% 94.51%) 0%, 20%, hsl(267.27deg 95.65% 90.98%));
+    padding: 7px 20px;
+    border-bottom: $border-bottom;
+    gap: 6px;
+    img {
+        width: 30px;
+    }
+    .cross {
+        width: 25px;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        background-color: #fffdf7;
+        border-radius: 50%;
+    }
+}
+
+
+/*----- Testimonials section -------*/
+.testimonials-section {
+    padding-top: 80px;
+    position: relative;
+    .absolute-blurb {
+        position: absolute;
+            right: -6px;
+            bottom: -67px;
+        width: 331px;
+        object-fit: contain;
+        filter: blur(88px);
+    }
+    .container-custom {
+        width: 800px;
+        max-width: 100%;
+    }
+}
+div#testimonialscontrols {
+    padding-bottom: 40px;
+    margin-bottom: 50px !important;
+    .carousel-inner {
+        overflow: visible !important;
+        //display:flex;
+            //justify-content: center;
+        .carousel-container-text {
+            padding: 0px;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+        }   
+        .carousel-item {
+            text-align: center;
+            //background-color: white;
+            //border-radius: 20px;
+            //border: $border-bottom;
+            padding: 20px;
+            //width: 70% !important;
+            //margin: auto;
+            p.testimonilas-title {
+                font-family: $fontTitle;
+            }
+        }
+        button:hover, button:focus {
+            background-color: transparent !important;
+        }
+        .carousel-control-next {
+            right: -78px !important;
+            opacity: 1 !important;
+        }
+
+        .carousel-control-prev {
+            left: -78px !important;
+            opacity: 1 !important;
+        }
+       
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            width: 40px !important;
+            height: 40px !important;
+            background-color: $primaryColor;
+            border: $border-bottom;
+            border-radius: 100%;
+            /* padding: 20px !important; */
+            box-sizing: content-box;
+            background-size: 60% !important;
+        }
+        .carousel-control-next-icon {
+            background-image: url("/wp-content/uploads/2023/12/arrow-right.svg");
+        }
+        .carousel-control-prev-icon {
+            background-image: url("/wp-content/uploads/2023/12/arrow-left.svg");
+        }
+    }
+    .carousel-indicators {
+        bottom: 0;
+        button {
+            border: $border-bottom !important;
+            width: 25px !important;
+            height: 25px !important;
+            border-radius: 100%;
+            opacity: 1 !important;
+        }
+        button.active {
+            //background-color: #d3ccff;
+            background-color: $primaryColor;
+        }
+    }
+}
+
+
+/*---------- CARDS SECTION WHEN SLIDER IS SELECTED --------*/
+/*when slide selected make the container wider
+.slide .container.content-container.position-relative {
+    width: 100% !important;
+}
+
+.slide > .container.content-container, .slide .carousel,
+.slide .carousel-inner {
+    width: 100% !important;
+    height: 100% !important;
+}*/
+.card {
+	width: 30%;
+	min-height: 412px;
+    background: $backgroundColor;
+}
+
+.card-body {
+    background-color: $backgroundColor !important;
+}
+.carousel-inner .card {
+	width: 100%;
+}
+
+/*to display the dotted border*/
+.carousel-item > div {
+	padding: 30px;
+}
+
+/*multi row slider*/
+.carousel-rows .carousel-item-next, .carousel-rows .carousel-item-prev, .carousel-rows .carousel-item.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*.carousel-rows .carousel-item {
+	display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+}*/
+
+/*carousel controls*/
+.carousel-rows  .carousel-indicators {
+	position: static !important;
+	margin: 0 !important;
+}
+.carousel-rows  .carousel-indicators button {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 100%;
+	opacity: 1 !important;
+	transition: backgroundColor .6s ease !important;
+	border: none !important;
+}
+
+.arrow-left {
+    left: 0% !important;
+    top: 0 !important;
+    /*width: 50px !important;
+    height: 50px !important;*/
+}
+
+.arrow-right {
+    top: 0 !important;
+    right: 0% !important;
+    bottom: 0% !important;
+    /*width: 50px !important;
+    height: 50px !important;*/
+}
+
+.arrow-right,
+.arrow-left {
+	opacity: 1 !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 30px !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: white;
+    border-radius: 100%;
+    /* padding: 20px !important; */
+    box-sizing: content-box;
+	background-size: 60% !important;
+}
+
+.nav-controls {
+    margin: auto;
+    box-sizing: content-box;
+    display: flex;
+    	align-items: center;
+    	justify-content: center;
+	width: fit-content;
+	/*padding must be equal to the width of arrows*/
+    padding: 0 60px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: unset !important;
+}
+
+
+/* small and extra-small screens */
+@media (max-width: 767px) {
+ .carousel-one .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-one .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  .carousel-one .carousel-inner .carousel-item > div .card-img-container img {
+    max-width: 100%;
+  }
+}
+.carousel-one .carousel-inner .carousel-item > div {
+    font-weight: 400 !important;
+}
+/* medium and up screens */
+@media only screen and (min-width:768px) {
+    .carousel-one .carousel-inner .carousel-item.active,
+  .carousel-one .carousel-inner .carousel-item-next,
+  .carousel-one .carousel-inner .carousel-item-prev {
+      display: flex !important;
+    }
+  }
+  
+  @media only screen and (min-width:768px) {
+    .carousel-one .carousel-inner .carousel-item-end.active,
+    .carousel-one .carousel-inner .carousel-item-next {
+        transform: translateX(33.33333333%) !important; /*must be equal to the width of the column with card*/
+      }
+    .carousel-one .carousel-inner .carousel-item-start.active,
+  .carousel-one .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33333333%) !important;
+    }
+  
+   .carousel-one .carousel-inner .carousel-item-end,
+  .carousel-one .carousel-inner .carousel-item-start {
+      transform: translateX(0) !important;
+    }
+    .carousel-one .carousel-inner .carousel-item > div {
+        font-weight: 400 !important;
+    }
+  }
+  .carousel-one .carousel-inner .carousel-item-end h3,
+  .carousel-one .carousel-inner .carousel-item-end p,
+  .carousel-one .carousel-inner .carousel-item-start h3,
+  .carousel-one .carousel-inner .carousel-item-start p {
+    font-weight: 400 !important;
+}

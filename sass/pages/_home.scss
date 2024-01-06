@@ -1,0 +1,328 @@
+/*---------- HOME PAGE --------*/
+/*Banner image*/
+.banner {
+    @include flexbox;
+    .col {
+        @include flexbox;
+        flex-direction: column;
+        align-self:stretch;     
+    }
+    .text-col {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    .text-container {
+        /*width:450px;*/
+        h1 {
+            font-size: 45px;
+            margin-bottom: 0;
+        }
+        & > span {
+            font-size: 21px;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+    }
+    img {
+        height: 103%;
+        object-fit: cover;
+        object-position: 0 2px;
+    }
+}
+
+/*------ SERVICES SECTION -------*/
+.services-section {
+    @include container;
+    width: 100%;
+    padding: 60px 0;
+    width: 100%;
+    position: relative;
+    background-image: url(/wp-content/uploads/2024/01/Asset-13-100-1.jpeg);
+    //background-image: linear-gradient(90deg, hsl(302.14deg 100% 97.42% / 95%) 0%, 20%, hsl(267.27deg 59.89% 95.1%));
+    background-size: cover;
+    background-attachment: fixed;
+    .heading-arrow {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        h2, span {
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        img.arrow {
+            position: absolute;
+            width: 64px;
+            right: -71px;
+            bottom: -24px;
+            width: 80px;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+            display: none;
+        }
+        img.arrow.in-view  {
+            animation: bounceRight 2s ease 3 forwards;
+            animation-delay: 0.4s;
+        }
+    }
+    img.cube {
+       position: absolute;
+        width: 57px;
+        top: 30px;
+        right: 507px;
+        animation: spin 25s linear infinite;
+    }
+    .services-container {
+        display: flex;
+            justify-content: center;
+            gap: 20px;
+        position: relative;
+        z-index: 9;
+        margin: auto;
+        margin-top: 55px;
+        /*services cards*/
+        .card-tab{
+            width: 33.33%;
+            border: $border-bottom;
+            background-color: $backgroundColor;
+        }
+        .card-items {
+            @include flex-column;
+            gap: 20px;
+            padding: 20px;
+            img {
+                max-width: 70px;
+                max-height:53px;
+            }
+        }
+    }
+    img.cells {
+        position: absolute;
+        bottom: 0px;
+        width: 300px;
+        z-index: 1;
+    }
+}
+
+/*---------WHY SECTION ------*/
+.why-section {
+    .half-column {
+        width: 50%;
+    }
+    @include container;
+    /*with vave
+    background-repeat: no-repeat;
+    background-image: url(http://dariyag10.sg-host.com/wp-content/uploads/2023/12/wave-e1701535932907.png);
+    background-position: -7% 175px;*/
+    background-repeat: no-repeat;
+    background-image: url(http://dariyag10.sg-host.com/wp-content/uploads/2023/12/blurred-purple-min.png);
+    background-position: -67px 104%;
+    background-size: 683px;
+        /* background-size: 50%; */
+    .list-items-container {
+        margin-top: 35px;
+    }
+    .list-item {
+        display: flex;
+        min-height: fit-content !important;
+        gap: 5px;
+        padding: 20px 15px;
+            /* margin: auto; */
+        background-color: #fff;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        opacity: 0;
+        &.in-view {
+            animation: fadeIn 0.4s ease-in forwards;
+            @for $i from 1 through 4 {
+              @include fadeInItem($i);
+            }
+        }
+        p {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+.why-section .container-custom {
+    position: relative;
+    .column:first-of-type {
+        width: 63%;
+    }
+
+}
+
+
+.why-section h2 {
+    text-align: left;
+}
+
+.rotate-shape {
+    position: absolute;
+    /* right: 144px; */
+    right: 0;
+    width: 280px;
+    top: 0;
+}
+
+img.pink-rotate {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 50s linear infinite;
+}
+
+/*--------- PORTFOLIO ------*/
+.portfolio-section {
+    //background-image: linear-gradient(90deg, hsl(300 40% 92% / 1) 0%, 10%, hsl(259.02deg 100% 91.96%));
+   // background-color: hsl(263.41deg 100% 91.96% / 33%);
+    //background-color: hsl(268.42deg 100% 92.55% / 55%);
+    background-image: url(/wp-content/uploads/2024/01/Asset-12-min-cropped-e1704276932385.jpeg);
+    //background-blend-mode:overlay;
+    padding: 60px 0;
+    position: relative;
+   /*& > img {
+        position: absolute;
+        z-index: 3;
+        width: 835px;
+        right: -191px;
+        bottom: -184px;
+        object-fit: contain;
+        opacity: 0.6;
+        display: none;
+    }
+    & > img {
+        position: absolute;
+        z-index: 3;
+        width: 351px;
+        right: 79px;
+        top: -90px;
+        transform: rotate(-20deg);
+        object-fit: contain;
+    }*/
+    &  > img {
+        position: absolute;
+        /* top: 168px; */
+        z-index: 3;
+        width: 205px;
+        right: 119px;
+        top: -108px;
+        transform: rotate(10deg);
+        object-fit: contain;
+    }
+    .container-custom {
+        display: flex;
+        gap: 20px;
+    }
+    .image-wrap {
+        width: 33.333%;
+        height: 400px;
+        overflow: hidden;
+        margin: 50px auto;
+        border-radius: 6px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: relative;
+        z-index: 9;
+        transition: transform 0.2s linear;
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            //transition: all 5s ease-in-out;
+        }
+        /*.portfolio-image:last-of-type {
+            //transition: all 7s ease-in-out;
+        }*/
+        /*&:hover, &:focus {
+            z-index:999;
+            transform: scale(1.1);
+        }*/
+        &:hover img, &:focus img {
+            object-position: bottom center;
+        }
+    }
+}
+
+
+
+
+/*--------- GET IN TOUCH ------*/
+.get-in-touch.section {
+    position: relative;
+    padding: 100px 0;
+    overflow:hidden;
+    background-color: #E7D6FF;
+    /* background-color: #E7D6FF; */
+    background-image: url(/wp-content/uploads/2024/01/Asset-13-100-1.jpeg);
+   // background-image: url(/wp-content/uploads/2023/12/grain_plain.png);
+    .container-custom {
+        position: relative;
+        z-index: 99;
+        background-color:#ffffffa8;
+        border: $border-bottom;
+        width: fit-content;
+        box-sizing: content-box;
+        padding: 50px 50px;
+        border-radius: 20px;
+    }
+    p {
+        text-align: center;
+        width: 700px;
+        max-width: 100%;
+        margin: auto;
+    }
+    img.cloud {
+        position: absolute;
+        width: 560px;
+    }
+
+    img.cloud.cloud-top {
+        top: 0;
+    }
+    img.cloud.cloud-left {
+        left: 60px;
+       animation: floatCloudLeft 45s linear infinite;
+    }
+    img.cloud.cloud-right {
+        right: 0;
+        animation: floatCloudRight 45s linear infinite;
+        animation-delay: 0.5s;
+    }
+    img.cloud.cloud-bottom{
+        bottom: 20px;
+    }
+
+    img.cloud.cloud-right.cloud-top {
+        width: 340px;
+    }
+    img.cloud.cloud-left.cloud-bottom {
+        width: 350px;
+    }
+    .button {
+        display: block;
+        margin: auto;
+        margin-top: 38px;
+        background-color: #D3FFBA;
+    }
+}
+
+/*----- Media Queries ------*/
+
+@media only screen and (max-width: 1440px) {
+    .services-section {
+        img.cube {
+            width: 72px;
+            top: 25px;
+            right: 375px;
+        }
+    }
+}
+
+

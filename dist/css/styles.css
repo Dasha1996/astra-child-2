@@ -47,6 +47,7 @@ main {
 
 h1 {
   text-align: left;
+  font-size: 50px;
 }
 
 h2 {
@@ -455,6 +456,16 @@ div#testimonialscontrols .carousel-indicators button.active {
 
 /*---------- HOME PAGE --------*/
 /*Banner*/
+.banner-section .text-container {
+  gap: 20px;
+}
+.banner-section h1, .banner-section p {
+  margin-bottom: 0;
+}
+.banner-section p {
+  font-size: 23px;
+  line-height: 1.7;
+}
 .banner-section .portrait {
   height: 560px;
   width: 90%;

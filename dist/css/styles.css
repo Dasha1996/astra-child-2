@@ -849,6 +849,10 @@ img.pink-rotate {
     opacity: 1;
   }
 }
+.ast-primary-header-bar {
+  background-color: transparent !important;
+}
+
 h1 {
   color: #E6D4FF;
 }/*# sourceMappingURL=styles.css.map */

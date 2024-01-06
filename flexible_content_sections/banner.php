@@ -9,7 +9,7 @@ $button_link = get_sub_field('button_link');
 ?><div class="banner-section section">
     <div class="container-custom">
         <div class="d-flex text-image-layout">
-    <div class="col text-col text-container">
+    <div class="col text-col d-flex">
         <div class="text-container d-flex flex-column">
             <?if(!empty($subtitle)) {
                 ?>

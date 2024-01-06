@@ -9,8 +9,8 @@ $button_link = get_sub_field('button_link');
 ?><div class="banner-section section">
     <div class="container-custom">
         <div class="d-flex text-image-layout">
-    <div class="col text-col d-flex justify-content-center">
-        <div class="text-container d-flex flex-column align-items-center">
+    <div class="col text-col d-flex align-items-center">
+        <div class="text-container d-flex flex-column">
             <?if(!empty($subtitle)) {
                 ?>
                 <span><?php echo $subtitle;?></span>

@@ -1,4 +1,5 @@
-/*variables*/
+/*new variables*/
+/*old variables*/
 /*------------ GLOBAL STYLES --------*/
 *,
 *:before,
@@ -120,8 +121,8 @@ hr {
 /*span highlight*/
 span {
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#E6D4FF), to(#E6D4FF));
-  background-image: linear-gradient(180deg, #D8D4FF 0%, #D8D4FF 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cec2f4), to(#cec2f4));
+  background-image: linear-gradient(180deg, #f6d97e 0%, #f6d97e 100%);
   background-size: 0% 23%;
   background-position: 0 89%;
   -webkit-transition: background-size 0.8s ease-in-out;
@@ -169,7 +170,7 @@ a.button {
   border: 2px solid #000 !important;
   transition: all ease-in 0.2s !important;
   width: fit-content;
-  background-color: #D8D4FF;
+  background-color: #f6d97e;
 }
 
 a.button:hover,
@@ -272,7 +273,7 @@ div#testimonialscontrols .carousel-inner .carousel-control-prev {
 div#testimonialscontrols .carousel-inner .carousel-control-next-icon, div#testimonialscontrols .carousel-inner .carousel-control-prev-icon {
   width: 40px !important;
   height: 40px !important;
-  background-color: #E6D4FF;
+  background-color: #cec2f4;
   border: 1px solid rgb(37, 36, 43);
   border-radius: 100%;
   /* padding: 20px !important; */
@@ -296,7 +297,7 @@ div#testimonialscontrols .carousel-indicators button {
   opacity: 1 !important;
 }
 div#testimonialscontrols .carousel-indicators button.active {
-  background-color: #E6D4FF;
+  background-color: #cec2f4;
 }
 
 /*---------- CARDS SECTION WHEN SLIDER IS SELECTED --------*/
@@ -474,6 +475,9 @@ div#testimonialscontrols .carousel-indicators button.active {
   display: block;
   margin-left: auto;
   border: 1px solid black;
+}
+.banner-section .button {
+  background-color: #f6d97e;
 }
 
 /*Banner image*/
@@ -853,5 +857,5 @@ img.pink-rotate {
 }
 
 h1 {
-  color: #E6D4FF;
+  color: #cec2f4;
 }/*# sourceMappingURL=styles.css.map */

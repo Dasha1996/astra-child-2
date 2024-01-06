@@ -13,7 +13,7 @@ $button_link = get_sub_field('button_link');
         <div class="text-container d-flex flex-column">
             <?if(!empty($subtitle)) {
                 ?>
-                <span><?php echo $subtitle;?></span>
+                <span class="subtitle"><?php echo $subtitle;?></span>
                 <?
             }?>
             <?if(!empty($banner_text)) {

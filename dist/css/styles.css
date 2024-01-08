@@ -588,7 +588,7 @@ div#testimonialscontrols .carousel-indicators button.active {
   max-height: 53px;
 }
 .services-section .services-container .card-items h3 {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 .services-section img.cells {
   position: absolute;

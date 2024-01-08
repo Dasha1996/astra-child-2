@@ -21,14 +21,14 @@ if(have_rows('services_cards')) {
         $description = get_sub_field('service_description');
         ?>
         <div class="service-card card-tab">
-            <div class="tab">
-            <!--<img src="/wp-content/uploads/2023/11/dots.png" alt="">-->
+            <!--<div class="tab">
+            <img src="/wp-content/uploads/2023/11/dots.png" alt="">-->
                 <!--<img class="cross" src="/wp-content/uploads/2023/11/thin_cross_black.png" alt="">
-                <img src="/wp-content/uploads/2023/11/tabs_black.png" alt=""> -->
+                <img src="/wp-content/uploads/2023/11/tabs_black.png" alt="">
                 <div class="circle"></div>
                 <div class="circle"></div>
                 <div class="circle"></div>
-            </div>
+            </div> -->
             <div class="card-items">
                 <img src="<?php echo $icon['url'];?>" alt="<?php echo $icon['alt'];?>">
                 <div class="text-container">

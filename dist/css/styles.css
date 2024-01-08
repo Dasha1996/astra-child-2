@@ -565,6 +565,7 @@ div#testimonialscontrols .carousel-indicators button.active {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
   position: relative;
   z-index: 9;
   margin: auto;

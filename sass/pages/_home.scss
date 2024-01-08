@@ -26,7 +26,7 @@
 }
 
 /*Banner image*/
-.banner {
+/*.banner {
     @include flexbox;
     .col {
         @include flexbox;
@@ -39,7 +39,7 @@
             align-items: center;
     }
     .text-container {
-        /*width:450px;*/
+        /*width:450px;
         h1 {
             font-size: 45px;
             margin-bottom: 0;
@@ -58,7 +58,7 @@
         object-fit: cover;
         object-position: 0 2px;
     }
-}
+}*/
 
 /*------ SERVICES SECTION -------*/
 .services-section {
@@ -67,10 +67,9 @@
     padding: 60px 0;
     width: 100%;
     position: relative;
-    background-image: url(/wp-content/uploads/2024/01/Asset-13-100-1.jpeg);
+    background-image: url(/wp-content/uploads/2024/01/services_bg_optimised-e1704706432311.jpeg);
     //background-image: linear-gradient(90deg, hsl(302.14deg 100% 97.42% / 95%) 0%, 20%, hsl(267.27deg 59.89% 95.1%));
     background-size: cover;
-    background-attachment: fixed;
     .heading-arrow {
         position: relative;
         width: fit-content;

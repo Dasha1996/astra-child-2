@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: #FFFEF5;
 }
 
 body.home {
@@ -486,42 +487,39 @@ div#testimonialscontrols .carousel-indicators button.active {
 }
 
 /*Banner image*/
-.banner {
-  display: flex;
-  align-items: center;
-}
-.banner .col {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-self: stretch;
-}
-.banner .text-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.banner .text-container {
-  /*width:450px;*/
-}
-.banner .text-container h1 {
-  font-size: 45px;
-  margin-bottom: 0;
-}
-.banner .text-container > span {
-  font-size: 21px;
-}
-.banner .text-container p {
-  margin-bottom: 0;
-  font-size: 22px;
-  line-height: 1.6;
-}
-.banner img {
-  height: 103%;
-  object-fit: cover;
-  object-position: 0 2px;
-}
-
+/*.banner {
+    @include flexbox;
+    .col {
+        @include flexbox;
+        flex-direction: column;
+        align-self:stretch;     
+    }
+    .text-col {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    .text-container {
+        /*width:450px;
+        h1 {
+            font-size: 45px;
+            margin-bottom: 0;
+        }
+        & > span {
+            font-size: 21px;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+    }
+    img {
+        height: 103%;
+        object-fit: cover;
+        object-position: 0 2px;
+    }
+}*/
 /*------ SERVICES SECTION -------*/
 .services-section {
   padding: 90px 0;
@@ -529,9 +527,8 @@ div#testimonialscontrols .carousel-indicators button.active {
   padding: 60px 0;
   width: 100%;
   position: relative;
-  background-image: url(/wp-content/uploads/2024/01/Asset-13-100-1.jpeg);
+  background-image: url(/wp-content/uploads/2024/01/services_bg_optimised-e1704706432311.jpeg);
   background-size: cover;
-  background-attachment: fixed;
 }
 .services-section .heading-arrow {
   position: relative;

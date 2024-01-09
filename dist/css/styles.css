@@ -572,16 +572,21 @@ div#testimonialscontrols .carousel-indicators button.active {
   margin-top: 55px;
   /*services cards*/
 }
-.services-section .services-container .card-tab {
-  width: 47%;
+.services-section .services-container .service-card {
+  max-width: 47%;
+  width: 400px;
   border: 1px solid rgb(37, 36, 43);
   background-color: #FFFDF7;
+  padding: 25px;
+  min-height: 211px;
+}
+.services-section .services-container .service-card p {
+  margin-bottom: 0;
 }
 .services-section .services-container .card-items {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
 }
 .services-section .services-container .card-items img {
   max-width: 70px;

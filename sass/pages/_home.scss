@@ -111,15 +111,20 @@
         margin: auto;
         margin-top: 55px;
         /*services cards*/
-        .card-tab{
-            width: 47%;
+        .service-card{
+            max-width: 47%;
+            width: 400px;
             border: $border-bottom;
             background-color: $backgroundColor;
+            padding: 25px;
+            min-height: 211px;
+            p {
+                margin-bottom: 0;
+            }
         }
         .card-items {
             @include flex-column;
             gap: 20px;
-            padding: 20px;
             img {
                 max-width: 70px;
                 max-height:53px;

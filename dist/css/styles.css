@@ -574,11 +574,11 @@ div#testimonialscontrols .carousel-indicators button.active {
 }
 .services-section .services-container .service-card {
   max-width: 47%;
-  width: 434px;
   border: 1px solid rgb(37, 36, 43);
   background-color: #FFFDF7;
   padding: 35px;
-  min-height: 211px;
+  min-height: 300px;
+  box-shadow: 5px 5px #000;
 }
 .services-section .services-container .service-card p {
   margin-bottom: 0;

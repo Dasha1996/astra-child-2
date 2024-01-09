@@ -113,11 +113,11 @@
         /*services cards*/
         .service-card{
             max-width: 47%;
-            width: 434px;
             border: $border-bottom;
             background-color: $backgroundColor;
             padding: 35px;
-            min-height: 211px;
+            min-height: 300px;
+            box-shadow: 5px 5px #000;
             p {
                 margin-bottom: 0;
             }

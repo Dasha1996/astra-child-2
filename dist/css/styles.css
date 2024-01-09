@@ -564,7 +564,7 @@ div#testimonialscontrols .carousel-indicators button.active {
 .services-section .services-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   position: relative;
   z-index: 9;
@@ -574,7 +574,7 @@ div#testimonialscontrols .carousel-indicators button.active {
 }
 .services-section .services-container .service-card {
   max-width: 47%;
-  width: 400px;
+  width: 434px;
   border: 1px solid rgb(37, 36, 43);
   background-color: #FFFDF7;
   padding: 25px;
